@@ -24,6 +24,9 @@ requirements:
     - python >=3.6
     - triad >=0.6.8
 
+    # Not listed upstream but required
+    - packaging
+
 test:
   imports:
     - fugue_sql_antlr
