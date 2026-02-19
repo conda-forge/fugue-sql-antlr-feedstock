@@ -1,18 +1,18 @@
 {% set name = "fugue-sql-antlr" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fugue-sql-antlr-{{ version }}.tar.gz
-  sha256: 22af96a6aa295441425482c6619daac1702de222c942ede12b36bc2e2993aa40
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 688cec1f76ff88dd1b1a714629e097989384b27e54c0a672cc3d6adcbed824d2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
