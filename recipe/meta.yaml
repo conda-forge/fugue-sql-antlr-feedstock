@@ -20,7 +20,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - antlr4-python3-runtime <4.12
+    - antlr4-python3-runtime <4.14
     - jinja2
     - python >={{ python_min }}
     - triad >=0.6.8
